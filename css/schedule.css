@@ -1,0 +1,13 @@
+body{padding: 5%}
+td{cursor: pointer}
+.schedule-title td{
+    text-align: center;
+    height: 80px;
+    line-height: 80px!important;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    background: lightskyblue!important;
+}
+tr:hover{border: 2px solid #900000}
+td:hover{background: #da9e0b !important;color: #fff}

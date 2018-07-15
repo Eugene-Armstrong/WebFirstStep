@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TW Schedule</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="shortcut icon" href="https://school.thoughtworks.cn/learn/program-center/subjectiveQuiz/favicon.png">
+</head>
+<body>
+<table class="table table-striped table-bordered table-hover">
+    <tr class="schedule-title">
+        <td colspan="4">Week 3 - Frontend Foundation and Stack-Based Develop</td>
+    </tr>
+    <tr>
+        <td width="10%"></td>
+        <td width="20%">Subject</td>
+        <td>Key Activities</td>
+        <td>Outcome</td>
+    </tr>
+    <tr class="active" title="Monday Arrangement">
+        <td>Day 1</td>
+        <td>Frontend Basis （HTML, CSS Bootstrap）</td>
+        <td>
+            1.Coding practice： HTML and Javascript<br>
+            2.Coding practice：Bootstrap and CSS layout<br>
+            3.Learning the Grid System layout<br>
+            4.Team code review for each trainee’s code<br>
+            5.Coach demo the implementation of a Page layout
+        </td>
+        <td>
+            1.Trainees can build Web pages through HTML, CSS, and UI frameworks<br>
+            2.Trainees are able to  perform simple Dom operations and event handling via Javascript<br>
+            3.Trainees learn how to quickly learn and apply a UI Framework
+        </td>
+    </tr>
+    <tr class="success" title="Tuesday Arrangement">
+        <td>Day 2</td>
+        <td>jQuery (Optional) + REACT （1-2days）</td>
+        <td>
+            1.Learning the DOM in browser<br>
+            2.Coding practice: Web Page implementation with Jquery framework<br>
+            3.Coding practice: Web Page implementation with React framework<br>
+            4.Learning the React frameworks, JSX and workﬂow<br>
+            5.Team code review for each Trainee’s code<br>
+            6.Coach demo the page implementation of React
+        </td>
+        <td>
+            1.Trainees know the model of developing in frontend via Jquery practice.<br>
+            2.Trainees understand working mechanism of React framework<br>
+            3.Trainees understand the web component mechanism and design ideas<br>
+            4.Trainees can build simple Single Page Web App with React
+        </td>
+    </tr>
+    <tr class="danger" title="Wednesday Arrangement">
+        <td>Day 3</td>
+        <td>REDUX (Optional)Depending on trainees' knowledge.</td>
+        <td>
+            1.Coding practice: refactoring React app to React + Redux<br>
+            2.Team code review for each Trainee’s code<br>
+            3.Coach Demo  the implementation of the Frontend
+        </td>
+        <td>
+            1.Trainees understand the principles and working mechanisms of Redux<br>
+            2.Trainees are able to use Redux + React to build simple front-end applications
+        </td>
+    </tr>
+    <tr class="warning" title="Thursday Arrangement">
+        <td>Day 4</td>
+        <td>Build Frontend of App with HTML, CSS, REACT, REDUX - I</td>
+        <td>
+            1.Coding practice of building a front-end of APP<br>
+            2.Learning how to develop UI Component of React<br>
+            3.Learning the lifecycle of React Component<br>
+            4.Learning how to develop a feature in a simple production ready stack<br>
+            5.Team code review for each Trainee’s code
+        </td>
+        <td colspan="2">
+            1.Trainees enhance  the knowledge of building front end<br>
+            2.Trainees can map the techniques and ideas you have learned before in the real scenario<br>
+            3.Trainees can  implement Web frontend independently or with team effort<br>
+            4.Trainee can implement the UI function in a exist React frontend stack
+        </td>
+    </tr>
+    <tr class="info" title="Friday Arrangement">
+        <td>Day 5</td>
+        <td> Build Frontend of App with HTML, CSS, REACT, REDUX - II</td>
+        <td>
+            1.Learning the data transfer between different pages<br>
+            2.Learning ES6 style UI component 3.Learning how to use reactrouter to navigate<br>
+            4.Coding practice of building a front-end of APP<br>
+            5.Team code review for each Trainee’s code
+        </td>
+        <td></td>
+    </tr>
+</table>
+<script src="js/jquery-3.2.0.min.js"></script>
+<script>
+    $(function () {
+        $("tr").each(function (i) {
+            if(i!=0){
+                $(this).children("td:eq(0)").css({"font-size":"24px"});
+                $(this).children("td:eq(1)").css({"font-size":"20px"});
+            }
+            if(i==1){
+                $(this).css({"font-size":"24px","font-family": "微软雅黑 Light"})
+            }
+        })
+    })
+</script>
+</body>
+</html>
