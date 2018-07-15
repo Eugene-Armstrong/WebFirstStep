@@ -1,0 +1,399 @@
+body{
+    font-family: 微软雅黑;
+    box-sizing: border-box;
+}
+.light{
+    font-family: "微软雅黑 Light";
+}
+/*导航栏*/
+header {
+    margin: 1rem 0;
+    background: rgba(0,0,0,0) !important;
+    position: absolute !important;
+    top:0;
+    width: 100% !important;
+    border: none!important;
+}
+
+/*导航*/
+#my-navbar{
+    float: right;
+    font-size: 1.5rem;
+}
+#my-navbar ul li:hover, .my-active{
+    background: rgba(0,0,0,0)!important;
+}
+.navbar-default .navbar-nav>li>a{
+    /*font-size: 1.5rem;*/
+    padding: 1rem 3rem 1.5rem 3rem;
+    color: #fff!important;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+/*LOGO*/
+.navbar-brand{
+    color: #e2001a!important;
+}
+
+/*首页展示*/
+.index-box{
+    /*max-width: 100%;*/
+    color: #fff;
+    background: url(../images/bg_1.png) no-repeat;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+.index-contents{
+    font-size: 4rem;
+}
+
+/*以下样式各box共用*/
+.text-line{
+    padding-bottom: 0.7rem;
+    border-bottom: 4px solid #8a1c21;
+}
+.img-responsive{
+    margin: 0 auto;
+}
+.sub-title{
+    margin: 10% 0 20% 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #333;
+}
+.sub-content, .sub-content a{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color:rgba(255,255,255,0.9);
+    text-decoration: none;
+}
+.row .col-md-3, .col-md-4{
+    overflow: hidden;
+}
+.my-hover{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    opacity: 0;
+}
+.my-hover .bg-color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(138,28,33,0.8);
+}
+.my-hover .bg-color .sub-title{
+    color:rgba(255,255,255,0.9);
+}
+.my-hover .bg-color .text-line{
+    border-color: rgba(255,255,255,0.9);
+}
+
+.title{box-shadow: #bababa 5px 5px 20px 5px;cursor: pointer}
+.title:hover{box-shadow: #666 5px 5px 20px 5px;}
+.about{
+    cursor: pointer;
+    box-shadow: #ccc 5px 5px 20px 3px;
+    border-radius: 10px;
+    padding: 2rem
+}
+.about:hover{
+    background: #eeeeee;
+    box-shadow: #bbbbbb 8px 8px 20px 5px;
+}
+/*end of 共用样式*/
+
+/*各个box*/
+.award-box, .skill-box, .experience-box, .self-box{
+    padding-bottom: 5%;
+    padding-top: 2%;
+    position: inherit;
+}
+.about-title, .skill-title, .self-title{
+    width: 100%;
+    float: right;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: right;
+    color: #333;
+    margin: 1rem 0;
+}
+.skill-box{
+    background: #f6f6f6;
+}
+.self-box .self-contents{
+    color: #777;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+}
+#self{
+    border: 2px solid #8a1c21;
+    padding: 1% 5%;
+    padding-bottom: 3%;
+}
+/*图片黑白滤镜*/
+.my-filter{
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+/*回到顶部*/
+.go-top{
+    display: none;
+    position: fixed;
+    padding: 0.5rem;
+    bottom: 10rem;
+    right: 1.5rem;
+    background: rgba(0,0,0,0.2);
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    /*background-image: url(../images/up.png);*/
+}
+
+/*页脚*/
+.footer {
+    width: 100%;
+    height: 5rem;
+    background-color: #222;
+    padding: 1.7rem 5%;
+}
+.footer-menu {
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-menu ul li {
+    display: inline;
+    margin: 0 2rem;
+}
+.footer-menu ul li a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.about-box{
+    margin: 5rem;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    position: inherit;
+}
+
+.about-contents{
+    margin-top: 2rem;
+    color: #777;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+}
+.my-img{
+    /*background: url(../images/tmp3.jpg) no-repeat;*/
+    /*background-size: 100% 100%;*/
+    /*background: #f4f4f4;*/
+    font-size: 1.6rem;
+    color: #777;
+    line-height: 3rem;
+    padding: 1.5rem 0;
+    float: right;
+    width: 88%;
+    height: 200px;
+    margin-bottom: 12px;
+}
+.my-text{
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: rgba(255,255,255,0.9);
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    background: url("../images/bg-six.png");
+    background-size: 100% 100%;
+    opacity: 0.7;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*结束*/
+
+.about-box .my-img{
+    width: 250px;
+    height: 200px;
+    /*background: url(../images/tmp2.jpg) no-repeat;*/
+}
+
+/**时间轴css从这里开始**/
+#end:after{
+    clear: inherit;
+}
+.main-timeline{
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+.main-timeline:before{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 118%;
+    background: rgba(148, 148, 148, 0.6);
+    margin: 0 0 0 -1px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.main-timeline .timeline{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.main-timeline .timeline:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.main-timeline .timeline-content{
+    width: 40%;
+    float: left;
+    margin: 5px 0 0 0;
+    border-radius: 6px;
+}
+.main-timeline .date{
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #25303b;
+    padding: 5px 0;
+    margin: 0 0 0 -36px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 0 7px #25303b;
+}
+.main-timeline .date span{
+    display: block;
+    text-align: center;
+}
+.main-timeline .day,
+.main-timeline .year{
+    font-size: 2rem;
+}
+.main-timeline .month{
+    font-size: 1.6rem;
+}
+.main-timeline .title{
+    padding: 15px;
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+}
+.main-timeline .title:after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    transform: rotate(-45deg);
+}
+.main-timeline .description{
+    padding: 15px;
+    margin: 0;
+    font-size: 14px;
+    color: #656565;
+    background: #f8f8f8;
+    border-radius: 0 0 6px 6px;
+}
+.main-timeline .timeline:nth-child(2n+2) .timeline-content{
+    float: right;
+}
+.main-timeline .timeline:nth-child(2n+2) .title:after{
+    left: -5px;
+}
+.main-timeline .timeline:nth-child(1) .title,
+.main-timeline .timeline:nth-child(1) .title:after{
+    background: #9f84c4;
+}
+.main-timeline .timeline:nth-child(2) .title,
+.main-timeline .timeline:nth-child(2) .title:after{
+    background: #02a2dd;
+}
+.main-timeline .timeline:nth-child(3) .title,
+.main-timeline .timeline:nth-child(3) .title:after{
+    background: #58b25e;
+}
+.main-timeline .timeline:nth-child(4) .title,
+.main-timeline .timeline:nth-child(4) .title:after{
+    background: #eab715;
+}
+.main-timeline .timeline:nth-child(5) .title,
+.main-timeline .timeline:nth-child(5) .title:after{
+    background: #02a2dd;
+}
+.main-timeline .timeline:nth-child(6) .title,
+.main-timeline .timeline:nth-child(6) .title:after{
+    background: #9f84c4;
+}
+@media only screen and (max-width: 990px){
+    .main-timeline{ width: 100%; }
+}
+@media only screen and (max-width: 767px){
+    .main-timeline:before,
+    .main-timeline .date{
+        left: 6%;
+    }
+    .main-timeline .timeline-content{
+        width: 85%;
+        float: right;
+    }
+    .main-timeline .title:after{
+        left: -5px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .main-timeline:before,
+    .main-timeline .date{
+        left: 12%;
+    }
+    .main-timeline .timeline-content{
+        width: 75%;
+    }
+    .main-timeline .date{
+        width: 60px;
+        height: 60px;
+        margin-left: -30px;
+    }
+    .main-timeline .month{
+        font-size: 14px;
+    }
+}
+/**时间轴css这里结束**/
